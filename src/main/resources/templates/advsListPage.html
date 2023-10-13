@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title></title>
+ </head>
+ <body>
+  <h1 align = "center">❤❤❤ Advs list ❤❤❤</h1>
+  
+  <tbody>
+    <tr th:each="adv: ${advs}">
+        <td th:text="${adv.name}" />
+        <td th:text="${adv.city}" />
+        
+        <br>
+    </tr>
+</tbody>
+  
+  <form action = "/advertisments/add" method = "get">
+    <input type = "submit" value = "Create an adv"/>
+  
+  
+  
+ </body>
+</html>

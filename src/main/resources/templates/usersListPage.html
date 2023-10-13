@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title></title>
+ </head>
+ <body>
+  <h1 align = "center">❤❤❤ Users list ❤❤❤</h1>
+  
+  <tbody>
+    <tr th:each="user: ${users}">
+        <td th:text="${user.id}" />
+        <td th:text="${user.username}" />
+        <td th:text="${user.email}" />
+        <td th:text="${user.password}" />
+        <td th:text="${user.role}" />
+        <td th:text="${user.registeredAt}" />
+        <br>
+    </tr>
+</tbody>
+  
+  
+  
+  
+ </body>
+</html>
